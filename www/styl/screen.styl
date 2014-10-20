@@ -1,0 +1,30 @@
+@import colors
+@import prefixes
+@import 'components/triangle'
+
+.ig
+  @import basics
+.ig
+  .senat
+    width 610px
+    height 400px
+    position relative
+    .mandat
+      position absolute
+      width 26px
+      height 26px
+      border-radius 3px
+      background yellow
+      transition background-color 0.4s, opacity 0.2s
+      &:hover
+          opacity 0.5
+          cursor help
+      .border
+        position absolute
+        width 100%
+        top 0px
+        left 0px
+        bottom 0px
+        border 1px solid black
+        opacity 0.2
+        border-radius @border-radius
