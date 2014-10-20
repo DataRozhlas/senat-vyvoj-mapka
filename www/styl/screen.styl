@@ -7,7 +7,7 @@
 .ig
   .senat
     width 610px
-    height 400px
+    height 173px
     position relative
     .mandat
       position absolute
@@ -28,3 +28,44 @@
         border 1px solid black
         opacity 0.2
         border-radius @border-radius
+  .slider
+    position relative
+    margin-left 10px
+    width 590px
+    height 70px
+    padding-top 30px
+    .hline
+      position absolute
+      top @padding-top
+      left 0px
+      width 100%
+      border-bottom 1px solid black
+    .tick
+      width 100px
+      margin-left -50px
+      position absolute
+      padding-top 5px
+      .line
+        position absolute
+        left 50%
+        top 0px
+        width 1px
+        background black
+        height 4px
+      .year
+        width 100%
+        text-align center
+        cursor default
+      &:first-child .year
+        position absolute
+        left 50px
+        text-align left
+
+      &.small
+        .year
+          display none
+    .selection
+      position absolute
+      top 20px
+      margin-left -5px
+      triangle(10px, 7px, 'bottom', ColorHeading)

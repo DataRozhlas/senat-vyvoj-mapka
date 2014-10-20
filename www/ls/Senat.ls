@@ -2,10 +2,9 @@ window.ig.Senat = class Senat
   kostSide: 35px
   (@baseElement, @data) ->
     @init!
-    @drawTime new Date!
+    @drawTime new Date!getTime!
 
-  drawTime: (date) ->
-    time = date.getTime!
+  drawTime: (time) ->
     data = for obvodId, obvod of @data
       usableSenator = null
       for senator in obvod

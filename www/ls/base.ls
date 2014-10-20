@@ -27,6 +27,21 @@ strany =
   "Ostravak": color: \#777    ordering: 27
   "SLK"     : color: \#888    ordering: 28
   "SsČR"    : color: \#999    ordering: 30
+
+radneVolby =
+  \19961116 : 1
+  \19981114 : 1
+  \20001112 : 1
+  \20021025 : 1
+  \20041105 : 1
+  \20061020 : 1
+  \20081017 : 1
+  \20121012 : 1
+  \20101015 : 1
+  \20141010 : 1
+
+
+volby_assoc = {}
 csvTransformer = (row) ->
   date = new Date!
     ..setTime 0
@@ -36,7 +51,9 @@ csvTransformer = (row) ->
   row.date = date
   row.time = date.getTime!
   row.obvod = parseInt row.obvod, 10
+  radne = radneVolby[row.datum] isnt void
   row.strana = strany[row.vitezStrana]
+  volby_assoc[row.time] = {date, radne}
   row
 
 
@@ -49,9 +66,13 @@ init = ->
     obvody[mandat.obvod].push mandat
   for index, obvod of obvody
     obvod.sort (a, b) -> a.time - b.time
-
+  volby = for time, volba of volby_assoc
+    volba
+  volby.sort (a, b) -> if a.date > b.date then 1 else -1
   container = d3.select ig.containers.base
   senat = new window.ig.Senat container, obvody
+  slider = new window.ig.Slider container, volby
+    ..on \time -> senat.drawTime it
 if d3?
   init!
 else
