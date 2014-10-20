@@ -70,9 +70,15 @@ init = ->
     volba
   volby.sort (a, b) -> if a.date > b.date then 1 else -1
   container = d3.select ig.containers.base
+  heading = container.append \h2
+    ..html "Zobrazen stav k 20. 10. 2014"
   senat = new window.ig.Senat container, obvody
   slider = new window.ig.Slider container, volby
-    ..on \time -> senat.drawTime it
+    ..on \time ->
+      date = new Date!
+        ..setTime it
+      heading.html "Zobrazen stav k #{date.getDate!}. #{date.getMonth! - 1}. #{date.getFullYear!}"
+      senat.drawTime it
 if d3?
   init!
 else
