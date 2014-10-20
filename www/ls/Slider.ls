@@ -13,6 +13,12 @@ window.ig.Slider = class Slider
       ..on \mousemove @~onInteraction
       ..on \touchstart @~onInteraction
       ..on \click @~onInteraction
+      ..on \mousedown ~>
+        d3.event.preventDefault!
+        @baseElement.on \mousemove @~onInteraction
+        @baseElement.on \mouseup ~>
+          @baseElement.on \mousemove null
+          @baseElement.on \mouseup null
 
 
     ticksElem = @element.append \div .attr \class \ticks
