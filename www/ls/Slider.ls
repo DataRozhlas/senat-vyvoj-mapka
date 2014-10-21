@@ -14,6 +14,7 @@ window.ig.Slider = class Slider
       ..on \touchstart @~onInteraction
       ..on \click @~onInteraction
       ..on \mousedown ~>
+        @element.on \mousemove null
         d3.event.preventDefault!
         @baseElement.on \mousemove @~onInteraction
         @baseElement.on \mouseup ~>
