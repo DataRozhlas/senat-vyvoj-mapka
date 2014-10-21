@@ -82,3 +82,23 @@
       margin-left (@width / (-2))
       &:hover
         opacity 1
+  .buttons
+    position relative
+    width 610px
+    button
+      border 1px solid darken(ColorHeading, 20%)
+      background ColorHeading
+      color white
+      position absolute
+      width 60px
+      margin-left -60px
+      left 50%
+      padding 4px 0px
+      top 0px
+      &.next
+        margin-left 1px
+      &:hover
+        background lighten(ColorHeading, 20%)
+      &:active
+        background lighten(ColorHeading, 40%)
+
