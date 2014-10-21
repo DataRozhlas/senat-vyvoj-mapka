@@ -71,13 +71,18 @@ init = ->
   volby.sort (a, b) -> if a.date > b.date then 1 else -1
   container = d3.select ig.containers.base
   heading = container.append \h2
-    ..html "Zobrazen stav k 20. 10. 2014"
+    ..html "Zobrazen stav po volbách 20. 10. 2014 (řádné volby)"
   senat = new window.ig.Senat container, obvody
   slider = new window.ig.Slider container, volby
     ..on \time ->
       date = new Date!
         ..setTime it
-      heading.html "Zobrazen stav k #{date.getDate!}. #{date.getMonth! + 1}. #{date.getFullYear!}"
+      lastVolby = null
+      for volba in volby
+        if volba.date <= date
+          lastVolby = volba
+      radne = if lastVolby.radne then "řádné" else "doplňovací"
+      heading.html "Zobrazen stav po volbách #{lastVolby.date.getDate!}. #{lastVolby.date.getMonth! + 1}. #{lastVolby.date.getFullYear!} (#{radne})"
       senat.drawTime it
 if d3?
   init!
