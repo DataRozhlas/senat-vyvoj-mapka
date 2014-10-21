@@ -41,22 +41,24 @@
     cursor pointer
     .hline
       position absolute
-      top @padding-top
+      top (@padding-top - 6px)
       left 0px
       width 100%
-      border-bottom 1px solid black
+      height 6px
+      border 1px solid black
+      border-radius 2px
     .tick
       width 100px
       margin-left -50px
       position absolute
-      padding-top 5px
+      padding-top 9px
       .line
         position absolute
         left 50%
         top 0px
         width 1px
         background black
-        height 4px
+        height 8px
       .year
         width 100%
         text-align center
@@ -71,6 +73,12 @@
           display none
     .selection
       position absolute
-      top 20px
-      margin-left -5px
-      triangle(10px, 7px, 'bottom', ColorHeading)
+      top 18px
+      width 20px
+      height 20px
+      border 1px solid black
+      background ColorHeading
+      opacity 0.9
+      margin-left (@width / (-2))
+      &:hover
+        opacity 1
