@@ -77,7 +77,7 @@ init = ->
     ..on \time ->
       date = new Date!
         ..setTime it
-      heading.html "Zobrazen stav k #{date.getDate!}. #{date.getMonth! - 1}. #{date.getFullYear!}"
+      heading.html "Zobrazen stav k #{date.getDate!}. #{date.getMonth! + 1}. #{date.getFullYear!}"
       senat.drawTime it
 if d3?
   init!
