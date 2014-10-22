@@ -3,7 +3,7 @@ window.ig.Souhrn = class Souhrn
     @baseElement.append \h4
       ..attr \class \souhrn-nadpis
       ..append \span
-        ..html "Součet mandátů"
+        ..html "Počet mandátů"
       ..append \span
         ..attr \class \arrow
     @element = @baseElement.append \ul
