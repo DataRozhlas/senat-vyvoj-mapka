@@ -5,7 +5,7 @@ window.ig.Slider = class Slider
     @currentTime = @endTime = @volby[*-1].date.getTime!
     @scale = d3.scale.linear!
       ..domain [@startTime, @endTime]
-      ..range [0 590px]
+      ..range [0 610px]
     @element = @baseElement.append \div
       ..attr \class \slider
       ..append \div
