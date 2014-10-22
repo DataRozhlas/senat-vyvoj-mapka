@@ -1,10 +1,14 @@
 @import colors
 @import prefixes
 @import 'components/triangle'
-
+body
+  margin 0px
 .ig
   @import basics
 .ig
+  width 610px
+  overflow hidden
+  height 400px
   h2
     font-size 24px
     color ColorHeading
@@ -34,7 +38,7 @@
         border-radius @border-radius
   .slider
     position relative
-    width 610px
+    width 600px
     height 70px
     padding-top 30px
     cursor pointer
@@ -66,7 +70,11 @@
         position absolute
         left 50px
         text-align left
-
+      &:last-child .year
+        text-align right
+        position absolute
+        left auto
+        right 50px
       &.small
         .year
           display none
@@ -91,8 +99,9 @@
       position absolute
       width 60px
       margin-left -60px
+      font-size 1.4em
       left 50%
-      padding 4px 0px
+      padding 1px 0px
       top 0px
       &.next
         margin-left 1px
