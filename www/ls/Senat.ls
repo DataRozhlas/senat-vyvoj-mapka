@@ -14,6 +14,7 @@ window.ig.Senat = class Senat
           break
       usableSenator
     data.sort (a, b) -> a.strana.ordering - b.strana.ordering
+    @currentMandaty = data
     @mandaty
       ..style \background-color ~> data[it].strana.color
       ..attr \data-tooltip ->

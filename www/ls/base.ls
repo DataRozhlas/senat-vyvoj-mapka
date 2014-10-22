@@ -73,6 +73,7 @@ init = ->
   heading = container.append \h2
     ..html "Zobrazen stav po volbách 20. 10. 2014 (řádné volby)"
   senat = new window.ig.Senat container, obvody
+  souhrn = new window.ig.Souhrn container, senat, strany
   slider = new window.ig.Slider container, volby
     ..on \time ->
       date = new Date!
@@ -84,6 +85,8 @@ init = ->
       radne = if lastVolby.radne then "řádné" else "doplňovací"
       heading.html "Zobrazen stav po volbách #{lastVolby.date.getDate!}. #{lastVolby.date.getMonth! + 1}. #{lastVolby.date.getFullYear!} (#{radne})"
       senat.drawTime it
+      souhrn.draw!
+
 if d3?
   init!
 else
