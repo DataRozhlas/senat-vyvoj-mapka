@@ -30,11 +30,11 @@
       color: '#85a9db',
       ordering: 7
     },
-    "SZ": {
+    "Zelení": {
       color: '#0FB103',
       ordering: 8
     },
-    "ANO 2011": {
+    "ANO": {
       color: '#5135A3',
       ordering: 9
     },
@@ -42,7 +42,7 @@
       color: '#B560F3',
       ordering: 10
     },
-    "SPO": {
+    "SPOZ": {
       color: '#FBB5B7',
       ordering: 11
     },
@@ -106,7 +106,7 @@
       color: '#888',
       ordering: 28
     },
-    "SsČR": {
+    "Soukromníci": {
       color: '#999',
       ordering: 30
     }
