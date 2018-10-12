@@ -1,0 +1,2 @@
+to compile: 
+uglifyjs init.js data.js postInit.js Event.js Player.js Senat.js Slider.js Souhrn.js utils.js geoUtils.js base.js -o ../script.js -b

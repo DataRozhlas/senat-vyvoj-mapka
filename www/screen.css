@@ -1,0 +1,318 @@
+.tooltip {
+    font-family: arial, helvetica, sans-serif;
+    z-index: 50;
+    position: absolute;
+    border: 1px solid #888;
+    color: #111;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-top: -8px;
+    margin-left: 0;
+    box-shadow: #aaa 0 0 1px
+}
+
+.tooltip p.only-child {
+    margin: 0
+}
+
+body {
+    margin: 0
+}
+
+.ig {
+    font-size: 14px;
+    margin: 0;
+    line-height: 19px;
+    font-family: arial, sans-serif
+}
+
+.ig *,
+.ig *:before,
+.ig *:after {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+.ig a {
+    color: #2c6fb3;
+    text-decoration: underline
+}
+
+.ig a:active,
+.ig a:focus {
+    text-decoration: none
+}
+
+.ig .leaflet-control-zoom a {
+    text-decoration: none;
+    color: #333
+}
+
+.ig .leaflet-control-attribution a {
+    color: #036
+}
+
+.ig .fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: #fff;
+    z-index: 10
+}
+
+.ig .fallback div {
+    margin: 270px 40px 0 40px;
+    text-align: center;
+    padding: 20px 10px;
+    border: 1px dotted #aaa
+}
+
+.ig {
+    width: 610px;
+    overflow: hidden;
+    height: 536px
+}
+
+.ig .sipka {
+    margin: 4px 0 5px 0;
+    font-size: 1em;
+    color: #333;
+    font-weight: normal;
+    font-variant: small-caps;
+    position: relative;
+    display: block;
+    position: absolute
+}
+
+.ig .sipka.praha {
+    left: 463px;
+    top: 184px
+}
+
+.ig .sipka.brno {
+    left: 398px;
+    top: 336px
+}
+
+.ig .sipka.ostrava {
+    left: 538px;
+    top: 336px
+}
+
+.ig .sipka div {
+    position: absolute;
+    top: 4px;
+    left: -15px;
+    width: 0;
+    height: 0;
+    background: 0;
+    border-style: solid;
+    border-width: 0 4px 5px 4px;
+    border-color: transparent transparent #ab0000 transparent
+}
+
+.ig h2 {
+    font-size: 24px;
+    color: #ab0000;
+    margin: 12px 0
+}
+
+.ig .slider {
+    position: relative;
+    width: 600px;
+    height: 70px;
+    padding-top: 30px;
+    cursor: pointer
+}
+
+.ig .slider .hline {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px
+}
+
+.ig .slider .tick {
+    width: 100px;
+    margin-left: -50px;
+    position: absolute;
+    padding-top: 9px
+}
+
+.ig .slider .tick .line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    background: #000;
+    height: 8px
+}
+
+.ig .slider .tick .year {
+    width: 100%;
+    text-align: center;
+    cursor: pointer
+}
+
+.ig .slider .tick:first-child .year {
+    position: absolute;
+    left: 50px;
+    text-align: left
+}
+
+.ig .slider .tick:last-child .year {
+    text-align: right;
+    position: absolute;
+    left: auto;
+    right: 50px
+}
+
+.ig .slider .tick.small .year {
+    display: none
+}
+
+.ig .slider .selection {
+    position: absolute;
+    top: 18px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    background: #ab0000;
+    opacity: .9;
+    margin-left: -10px
+}
+
+.ig .slider .selection:hover {
+    opacity: 1
+}
+
+.ig .buttons {
+    position: relative;
+    width: 610px
+}
+
+.ig button {
+    border: 1px solid #890000;
+    background: #ab0000;
+    color: #fff;
+    position: absolute;
+    width: 60px;
+    margin-left: -60px;
+    font-size: 1.4em;
+    left: 50%;
+    padding: 1px 0;
+    top: 0
+}
+
+.ig button.next {
+    margin-left: 1px
+}
+
+.ig button.play {
+    top: 493px;
+    padding: 4px 0 5px 0;
+    left: 0;
+    margin: 0;
+    font-size: 1em;
+    width: 100px
+}
+
+.ig button.play span {
+    padding-left: 5px
+}
+
+.ig button:hover {
+    background: #ef0000
+}
+
+.ig button:active {
+    background: #ff3434
+}
+
+.ig h4.souhrn-nadpis {
+    margin: 4px 0 5px 0;
+    font-size: 1em;
+    color: #333;
+    font-weight: normal;
+    font-variant: small-caps;
+    position: relative
+}
+
+.ig h4.souhrn-nadpis .arrow {
+    display: block;
+    position: absolute;
+    left: 106px;
+    bottom: 6px;
+    width: 0;
+    height: 0;
+    background: 0;
+    border-style: solid;
+    border-width: 4px 3px 0 3px;
+    border-color: #ab0000 transparent transparent transparent
+}
+
+.ig .souhrn {
+    position: relative;
+    height: 35px;
+    margin: 0
+}
+
+.ig .souhrn li {
+    position: absolute;
+    top: 0;
+    width: 68px;
+    padding: 0;
+    transition: left .4s, opacity .6s;
+    list-style-type: none;
+    opacity: 0;
+    height: 20px
+}
+
+.ig .souhrn li:hover {
+    cursor: help
+}
+
+.ig .souhrn li:hover .count {
+    font-weight: bold
+}
+
+.ig .souhrn li:hover .kost {
+    opacity: .6
+}
+
+.ig .souhrn li.active {
+    opacity: 1
+}
+
+.ig .souhrn li .kost {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+}
+
+.ig .souhrn li .count {
+    display: block;
+    position: absolute;
+    left: 26px;
+    top: 1px
+}

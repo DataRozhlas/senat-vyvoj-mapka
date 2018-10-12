@@ -11,9 +11,9 @@
   "dependencies": {
     "async": "~0.2.9",
     "cssmin": "^0.4.1",
-    "html-minifier": "^0.6.8",
-    "request": "~2.31.0",
-    "stylus": "~0.42.0",
-    "uglify-js": "~2.4.8"
+    "html-minifier": "^3.5.20",
+    "request": "^2.88.0",
+    "stylus": "^0.54.5",
+    "uglify-js": "^3.4.9"
   }
 }
