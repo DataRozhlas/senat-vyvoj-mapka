@@ -38,7 +38,6 @@
         return !it.radne;
       });
       z1$.style('left', function(it){
-        console.log(this$.scale(it.date.getTime()/600*sliderWidth) + "px");
         return this$.scale(it.date.getTime()) + "px";
       });
       z2$ = z1$.append('div');
