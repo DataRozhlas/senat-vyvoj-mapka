@@ -1778,7 +1778,7 @@ window.ig.data = {
         x$.html("Stav po volbách 13. 10. 2018 (řádné)");
         senat = new window.ig.Senat(container, obvody);
         div$ = footer = container.append("div");
-        div$.attr("class", "footer");
+        div$.attr("class", "mapfooter");
         souhrn = new window.ig.Souhrn(footer, senat, strany);
         y$ = slider = new window.ig.Slider(footer, volby);
         y$.on("time", function(it) {

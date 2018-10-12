@@ -204,7 +204,7 @@ body {
     left: 300px;
 }
 
-.ig .footer {
+.ig .mapfooter {
     position: relative;
     top: -60px;
 }
@@ -366,7 +366,7 @@ body {
         top: -65px;
     }
 
-    .ig .footer {
+    .ig .mapfooter {
         top: -90px;
     }
 
