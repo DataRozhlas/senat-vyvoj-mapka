@@ -87,22 +87,21 @@ body {
     font-variant: small-caps;
     position: relative;
     display: block;
-    position: absolute
 }
 
 .ig .sipka.praha {
-    left: 463px;
-    top: 184px
+    left: 460px;
+    top: -170px;
 }
 
 .ig .sipka.brno {
     left: 398px;
-    top: 336px
+    top: -50px;
 }
 
 .ig .sipka.ostrava {
     left: 538px;
-    top: 336px
+    top: -73px;
 }
 
 .ig .sipka div {
@@ -201,14 +200,19 @@ body {
 
 .ig .buttons {
     position: relative;
-    width: 610px
+    width: 610px;
+    left: 300px;
+}
+
+.ig .footer {
+    position: relative;
+    top: -60px;
 }
 
 .ig button {
     border: 1px solid #890000;
     background: #ab0000;
     color: #fff;
-    position: absolute;
     width: 60px;
     margin-left: -60px;
     font-size: 1.4em;
@@ -222,7 +226,8 @@ body {
 }
 
 .ig button.play {
-    top: 493px;
+    position: relative;
+    top: -28px;
     padding: 4px 0 5px 0;
     left: 0;
     margin: 0;
@@ -315,4 +320,70 @@ body {
     position: absolute;
     left: 26px;
     top: 1px
+}
+
+@media only screen and (max-width: 600px) {
+    .ig {
+        height: 800px;
+    }
+    .ig h2 {
+        font-size: large;
+    }
+
+    .ig svg {
+        width: 320px;
+        height: 350px;
+    }
+
+    .ig svg .republic {
+        transform: scale(0.8);
+    }
+
+    .ig svg .praha {
+        transform: translate(0px, 200px);
+    }
+
+    .ig svg .brno {
+        transform: translate(220px, 190px) scale(0.6);
+    }
+
+    .ig svg .ostrava {
+        transform: translate(210px, 270px) scale(0.6);
+    }
+
+    .ig .sipka.praha {
+    left: 120px;
+    top: -45px;
+    }
+
+    .ig .sipka.brno {
+        left: 270px;
+        top: -120px;
+    }
+
+    .ig .sipka.ostrava {
+        left: 260px;
+        top: -65px;
+    }
+
+    .ig .footer {
+        top: -90px;
+    }
+
+    .ig .souhrn {
+        transform: scale(0.7) translateX(-125px);
+    }
+
+    .ig .slider {
+        transform: scale(0.5) translate(-280px, -50px);
+    }
+
+    .ig .buttons {
+        top: -40px;
+        left: 250px;
+    }
+
+    .ig button.play {
+        top: -68px;
+    }
 }

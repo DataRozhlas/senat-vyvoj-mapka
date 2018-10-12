@@ -190,10 +190,12 @@
     });
     container = d3.select(ig.containers.base);
     x$ = heading = container.append('h2');
-    x$.html("Stav po volbách 20. 10. 2014 (řádné volby)");
+    x$.html("Stav po volbách 13. 10. 2018 (řádné)");
     senat = new window.ig.Senat(container, obvody);
-    souhrn = new window.ig.Souhrn(container, senat, strany);
-    y$ = slider = new window.ig.Slider(container, volby);
+    div$ = footer = container.append('div');
+    div$.attr("class","footer");
+    souhrn = new window.ig.Souhrn(footer, senat, strany);
+    y$ = slider = new window.ig.Slider(footer, volby);
     y$.on('time', function(it){
       var x$, date, lastVolby, i$, ref$, len$, volba, radne;
       x$ = date = new Date();
@@ -211,7 +213,7 @@
       return souhrn.draw();
     });
     player = new window.ig.Player(slider);
-    z$ = playBtn = container.append('button');
+    z$ = playBtn = footer.append('button');
     z$.html("Přehrát <span>▶</span>");
     z$.attr('class', 'play');
     z$.on('click', bind$(player, 'start'));

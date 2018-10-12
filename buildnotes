@@ -1,3 +1,15 @@
 to compile: 
 data/dataprep.ipynb
 uglifyjs init.js ../../data/data.js postInit.js Event.js Player.js Senat.js Slider.js Souhrn.js utils.js geoUtils.js base.js -o ../script.js -b
+
+
+todo: release držátka, tooltipy mobil, pozice tooltip, slider nejde na mobilu
+
+
+html asset:
+<link rel="stylesheet" href="https://data.irozhlas.cz/senat-vyvoj-mapka/src/screen.css">
+<div class='ig' data-ig='base'></div>
+<script src="https://samizdat.cz/tools/d3/3.4.11.min.js"></script>
+<script src="https://samizdat.cz/tools/tooltip/v1.1.4.d3.js"></script>
+<script src="https://samizdat.cz/tools/topojson/1.6.8.min.js"></script>
+<script src="https://data.irozhlas.cz/senat-vyvoj-mapka/src/script.js" charset="utf-8" async></script>

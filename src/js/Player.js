@@ -20,7 +20,7 @@
         return;
       }
       this.slider.setTime(this.time);
-      this.time += 86400 * 1e3 * 4;
+      this.time += 86400 * 1e3 * 8;
       if (this.time > this.endTime) {
         return this.stop();
       } else {
