@@ -121,7 +121,9 @@
     '20081017': 1,
     '20121012': 1,
     '20101015': 1,
-    '20141010': 1
+    '20141010': 1,
+    '20161007': 1,
+    '20181005': 1,
   };
   window.ig.obvodyNazvy = ['prd', "Karlovy Vary", "Sokolov", "Cheb", "Most", "Chomutov", "Louny", "Plzeň-město", "Rokycany", "Plzeň-město", "Český Krumlov", "Domažlice", "Strakonice", "Tábor", "České Budějovice", "Pelhřimov", "Beroun", "Praha 12", "Příbram", "Praha 11", "Praha 4", "Praha 5", "Praha 10", "Praha 8", "Praha 9", "Praha 6", "Praha 2", "Praha 1", "Mělník", "Litoměřice", "Kladno", "Ústí nad Labem", "Teplice", "Děčín", "Liberec", "Jablonec nad Nisou", "Česká Lípa", "Jičín", "Mladá Boleslav", "Trutnov", "Kutná Hora", "Benešov", "Kolín", "Pardubice", "Chrudim", "Hradec Králové", "Ústí nad Orlicí", "Náchod", "Rychnov nad Kněžnou", "Blansko", "Svitavy", "Žďár nad Sázavou", "Jihlava", "Třebíč", "Znojmo", "Brno-město", "Břeclav", "Vyškov", "Brno-město", "Brno-město", "Brno-město", "Olomouc", "Prostějov", "Přerov", "Bruntál", "Šumperk", "Olomouc", "Nový Jičín", "Opava", "Frýdek-Místek", "Ostrava-město", "Ostrava-město", "Ostrava-město", "Frýdek-Místek", "Karviná", "Karviná", "Kroměříž", "Vsetín", "Zlín", "Hodonín", "Zlín", "Uherské Hradiště"];
   volby_assoc = {};
