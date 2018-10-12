@@ -38,7 +38,7 @@
         return !it.radne;
       });
       z1$.style('left', function(it){
-        return this$.scale(it.date.getTime()) + "px";
+        return this$.scale(it.date.getTime()+200) + "px";
       });
       z2$ = z1$.append('div');
       z2$.attr('class', 'year');
