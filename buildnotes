@@ -3,7 +3,7 @@ data/dataprep.ipynb
 uglifyjs init.js ../../data/data.js postInit.js Event.js Player.js Senat.js Slider.js Souhrn.js utils.js geoUtils.js base.js -o ../script.js -b
 
 
-todo: release držátka, tooltipy mobil, pozice tooltip, slider nejde na mobilu
+todo: release držátka, tooltipy mobil, slider nejde na mobilu
 
 
 html asset:

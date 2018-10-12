@@ -13,7 +13,8 @@
       this.currentTime = this.endTime = (ref$ = this.volby)[ref$.length - 1].date.getTime();
       x$ = this.scale = d3.scale.linear();
       x$.domain([this.startTime, this.endTime]);
-      x$.range([0, 600]);
+      var sliderWidth = screen.width < 600 ? 320 : 600;
+      x$.range([0, sliderWidth]);
       y$ = this.element = this.baseElement.append('div');
       y$.attr('class', 'slider');
       z$ = y$.append('div');
@@ -37,6 +38,7 @@
         return !it.radne;
       });
       z1$.style('left', function(it){
+        console.log(this$.scale(it.date.getTime()/600*sliderWidth) + "px");
         return this$.scale(it.date.getTime()) + "px";
       });
       z2$ = z1$.append('div');
