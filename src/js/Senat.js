@@ -49,6 +49,7 @@
         : changed.transition().duration(400);
       this.first = false;
       return target.attr('fill', function(it){
+        //console.log(this$.data[it.properties.obvod].usableSenator);
         return this$.data[it.properties.obvod].usableSenator.strana.color;
       });
     };

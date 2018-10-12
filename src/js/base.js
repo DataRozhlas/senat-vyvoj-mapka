@@ -109,6 +109,22 @@
     "Soukromníci": {
       color: '#999',
       ordering: 30
+    },
+    "SEN 21": {
+      color: '#008a92',
+      ordering: 31
+    }, 
+    "OPAT": {
+      color: '#036937',
+      ordering: 32
+    },
+    "HPP 11": {
+      color: '#ceb00e',
+      ordering: 33
+    },
+    "\"OSN\"": {
+      color: '#eaeaea',
+      ordering: 34
     }
   };
   radneVolby = {
