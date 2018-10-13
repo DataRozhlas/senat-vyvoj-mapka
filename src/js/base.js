@@ -190,7 +190,7 @@
     });
     container = d3.select(ig.containers.base);
     x$ = heading = container.append('h2');
-    x$.html("Stav po volbách 13. 10. 2018 (řádné)");
+    x$.html("Po volbách 13. 10. 2018 (řádné)");
     senat = new window.ig.Senat(container, obvody);
     div$ = footer = container.append('div');
     div$.attr("class","mapfooter");
@@ -208,7 +208,7 @@
         }
       }
       radne = lastVolby.radne ? "řádné" : "doplňovací";
-      heading.html("Po volbách " + lastVolby.date.getDate() + ". " + (lastVolby.date.getMonth() + 1) + ". " + lastVolby.date.getFullYear() + " (" + radne + ")");
+      heading.html("Po volbách " + ((lastVolby.date.toISOString().substring(0,7) === "2018-10") ? "13" : lastVolby.date.getDate()) + ". " + (lastVolby.date.getMonth() + 1) + ". " + lastVolby.date.getFullYear() + " (" + radne + ")");
       senat.drawTime(it);
       return souhrn.draw();
     });
