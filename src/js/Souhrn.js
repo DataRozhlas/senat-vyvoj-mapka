@@ -67,11 +67,15 @@
       z3$.duration(600);
       z3$.remove();
       x$.style('left', function(it){
-        return it.index * 68 + "px";
+        var width = 68;
+        if (screen.width < 600) width = 115;
+        return it.index * width + "px";
       });
       z4$ = x$.select('span.count');
       z4$.html(function(it){
-        return it.count + "";
+        var partyName = "";
+        if (screen.width < 600) partyName = "<b>" + it.strana + "</b><br>";
+        return partyName + " " + it.count + "";
       });
       return x$;
     };
