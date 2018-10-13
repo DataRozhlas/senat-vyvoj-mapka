@@ -1,3 +1,7 @@
+li {
+    background: none !important;
+}
+
 .tooltip {
     font-family: arial, helvetica, sans-serif;
     z-index: 50;
@@ -323,10 +327,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    li {
-        background: none !important;
-    }
-
     .ig {
         margin-left: -13px;
     }

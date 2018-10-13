@@ -1692,15 +1692,15 @@ window.ig.data = {
     var strany, radneVolby, volby_assoc, csvTransformer, init;
     strany = {
         ODS: {
-            color: "#1A77EE",
+            color: "#427aba",
             ordering: 1
         },
         "ČSSD": {
-            color: "#FEA201",
+            color: "#f18240",
             ordering: 2
         },
         "KDU-ČSL": {
-            color: "#FEE300",
+            color: "#ffff40",
             ordering: 3
         },
         "4KOALICE": {
@@ -1724,11 +1724,11 @@ window.ig.data = {
             ordering: 8
         },
         ANO: {
-            color: "#5135A3",
+            color: "#253063",
             ordering: 9
         },
         "TOP 09": {
-            color: "#B560F3",
+            color: "#77307b",
             ordering: 10
         },
         SPOZ: {
@@ -1784,7 +1784,7 @@ window.ig.data = {
             ordering: 25
         },
         "Piráti": {
-            color: "#333",
+            color: "#292829",
             ordering: 26
         },
         Ostravak: {
