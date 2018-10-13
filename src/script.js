@@ -1375,7 +1375,7 @@ window.ig.data = {
                 d3.event.preventDefault();
                 this$.onInteraction();
                 this$.baseElement.on("mousemove", bind$(this$, "onInteraction"));
-                return this$.baseElement.on("mouseup", function() {
+                return d3.select("body").on("mouseup", function() {
                     this$.baseElement.on("mousemove", null);
                     return this$.baseElement.on("mouseup", null);
                 });
