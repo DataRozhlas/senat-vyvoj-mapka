@@ -371,7 +371,11 @@ body {
     }
 
     .ig .souhrn {
-        transform: scale(0.7) translate(-125px, -10px);
+        position: relative;
+        top: -10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 320px;
     }
 
     .ig .slider {
@@ -393,10 +397,17 @@ body {
     }
 
     .ig .souhrn li {
-        width: 120px;
+        width: 100px;
     }
 
-    .ig .souhrn .count {
+    .ig .souhrn li .kost {
+        transform: scale(0.5) translateY(20px);
+    }
+
+    .ig .souhrn li .count {
+        position: relative; 
         top: 5px;
+        font-size: 10px;
+        line-height: 1.5;
     }
 }

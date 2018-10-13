@@ -68,7 +68,7 @@
       z3$.remove();
       x$.style('left', function(it){
         var width = 68;
-        if (screen.width < 600) width = 115;
+        if (screen.width < 600) width = 100;
         return it.index * width + "px";
       });
       z4$ = x$.select('span.count');
