@@ -208,7 +208,7 @@
         }
       }
       radne = lastVolby.radne ? "řádné" : "doplňovací";
-      heading.html("Stav po volbách " + lastVolby.date.getDate() + ". " + (lastVolby.date.getMonth() + 1) + ". " + lastVolby.date.getFullYear() + " (" + radne + ")");
+      heading.html("Po volbách " + lastVolby.date.getDate() + ". " + (lastVolby.date.getMonth() + 1) + ". " + lastVolby.date.getFullYear() + " (" + radne + ")");
       senat.drawTime(it);
       return souhrn.draw();
     });

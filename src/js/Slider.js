@@ -19,7 +19,16 @@
       y$.attr('class', 'slider');
       z$ = y$.append('div');
       z$.attr('class', 'hline');
-      y$.on('touchstart', bind$(this, 'onInteraction'));
+      y$.on('touchstart', function() {
+        this$.element.on('touchmove', null);
+        d3.event.preventDefault();
+        this$.onInteraction();
+        this$.baseElement.on('touchmove', bind$(this$, 'onInteraction'));
+        return this$.baseElement.on('touchcancel', function(){
+          this$.baseElement.on('touchmove', null);
+          return this$.baseElement.on('touchcancel', null);
+        });
+      });
       y$.on('click', bind$(this, 'onInteraction'));
       y$.on('mousedown', function(){
         this$.element.on('mousemove', null);

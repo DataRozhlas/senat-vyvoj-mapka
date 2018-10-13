@@ -6,9 +6,6 @@
     var bounds, projection, ref$, height;
     bounds = geoUtils.getBounds(features);
     projection = geoUtils.getProjection(bounds, width);
-    if (width === 180) {
-      console.log(bounds);
-    }
     ref$ = geoUtils.getDimensions(bounds, projection), width = ref$.width, height = ref$.height;
     return {
       width: width,
