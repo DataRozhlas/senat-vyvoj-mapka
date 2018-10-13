@@ -323,6 +323,10 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    li {
+        background: none !important;
+    }
+
     .ig {
         margin-left: -13px;
     }
