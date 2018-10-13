@@ -1488,7 +1488,7 @@ window.ig.data = {
             currentStranyAssoc = {};
             for (i$ = 0, len$ = (ref$ = this.senat.currentMandaty).length; i$ < len$; ++i$) {
                 mandat = ref$[i$];
-                stranaReal = this.strany[mandat.vitezStrana] && this.strany[mandat.vitezStrana].ordering <= 11 ? mandat.vitezStrana : "Ostatní";
+                stranaReal = this.strany[mandat.vitezStrana] && this.strany[mandat.vitezStrana].ordering <= 12 ? mandat.vitezStrana : "Ostatní";
                 currentStranyAssoc[stranaReal] == null && (currentStranyAssoc[stranaReal] = 0);
                 currentStranyAssoc[stranaReal]++;
             }
@@ -1737,11 +1737,11 @@ window.ig.data = {
         },
         NK: {
             color: "#aaa",
-            ordering: 12
+            ordering: 13
         },
         STAN: {
             color: "#888",
-            ordering: 13
+            ordering: 12
         },
         NEZ: {
             color: "#999",

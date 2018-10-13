@@ -48,11 +48,11 @@
     },
     "NK": {
       color: '#aaa',
-      ordering: 12
+      ordering: 13
     },
     "STAN": {
       color: '#888',
-      ordering: 13
+      ordering: 12
     },
     "NEZ": {
       color: '#999',

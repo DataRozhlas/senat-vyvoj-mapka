@@ -24,7 +24,7 @@
       currentStranyAssoc = {};
       for (i$ = 0, len$ = (ref$ = this.senat.currentMandaty).length; i$ < len$; ++i$) {
         mandat = ref$[i$];
-        stranaReal = this.strany[mandat.vitezStrana] && this.strany[mandat.vitezStrana].ordering <= 11 ? mandat.vitezStrana : "Ostatní";
+        stranaReal = this.strany[mandat.vitezStrana] && this.strany[mandat.vitezStrana].ordering <= 12 ? mandat.vitezStrana : "Ostatní";
         currentStranyAssoc[stranaReal] == null && (currentStranyAssoc[stranaReal] = 0);
         currentStranyAssoc[stranaReal]++;
       }
